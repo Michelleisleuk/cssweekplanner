@@ -1,0 +1,1280 @@
+/*** Table of contents *******************************
+    
+    01. General Lay-out
+    02. Legende
+    03. Positioneren chronodexen en onderschriften
+    04. Opmaak van de onderverdelingen (uren en kwartieren)
+    05. Opmaak uren rondom de chronodex
+    06. Opmaak Chronodex zelf
+    07. Footer
+
+**************************** End table of contents***/
+
+@mixin school { background-color: palevioletred;}
+@mixin workingforschool { background-color: lightpink;}
+@mixin routines { background-color: peachpuff;}
+@mixin eating { background-color: goldenrod;}
+@mixin workingout { background-color: lightsalmon;}
+@mixin social { background-color: lightgoldenrodyellow;}
+@mixin funandculture { background-color: lightblue;}
+@mixin work { background-color: darkseagreen;}
+@mixin travel { background-color: rosybrown;}
+@mixin sleep { background-color: gainsboro;}
+
+/*** General Lay-out ********************************/
+
+        body {
+            background-color: white;
+            font-family: sans-serif;
+            text-align: center;      
+        }
+
+        h1 {
+            font-weight: bold;
+            font-size: 2em;
+            margin-bottom: 20px;
+            color: white;
+            padding: 10px;
+            background-color: black;
+        }
+
+        a {
+            text-decoration: none;
+            background-color: black;
+            color: white;
+            padding: 5px;
+
+        }
+
+        a:hover {
+            background-color: white;
+            color: black;
+        }
+
+        .onderschrift h2 {
+             font-weight: bold;
+        }
+/**************************** End General Lay-out ***/
+
+/*** Legende opmaken ********************************/
+
+    .legend {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .legend li {
+        border: solid black;
+        padding: 5px;
+        margin: 5px;
+        font-weight: bold;
+    }
+
+    /* Legende een kleur geven */
+        .school { @include school;}
+        .workingforschool { @include workingforschool;}
+        .routines { @include routines;}
+        .eating { @include eating;}
+        .workingout { @include workingout;}
+        .social { @include social;}
+        .funandculture { @include funandculture;}
+        .work { @include work;}
+        .travel { @include travel;}
+        .sleep { @include sleep;}
+
+/************************************* End legend ***/
+
+/*** Positioneren chronodexen en onderschriften *****/
+
+    .alleweekdagen {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .weekdag {
+        margin-top: 50px;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    .onderschrift {
+        margin-top: 30px;
+        background-color: black;
+        color: white;
+        padding: 5px;
+
+    }
+
+/*****************************************************/
+
+
+
+/*** Opmaak van de onderverdelingen ******************/
+
+    .uren {
+        position: absolute;
+        background-color: black;
+        height: inherit;
+        width: 3px;
+        margin-left: 127px;
+        margin-top: 4px;
+
+    }
+
+    .uren1 {
+        transform: rotate(0deg);
+    }
+
+    .uren2 {
+        transform: rotate(30deg);
+    }
+
+    .uren3 {
+        transform: rotate(60deg);
+    }
+
+    .uren4 {
+        transform: rotate(90deg);
+    }
+
+    .uren5 {
+        transform: rotate(120deg);
+    }
+
+    .uren6 {
+        transform: rotate(150deg);
+    }
+
+    .kwartieren {
+        position: absolute;
+        background-color: black;
+        height: inherit;
+        width: 1px;
+        margin-left: 127px;
+        margin-top: 4px;
+    }
+
+    .kwartieren1 {
+        transform: rotate(7.5deg);
+    }
+
+    .kwartieren2 {
+        transform: rotate(15deg);
+    }
+
+    .kwartieren3 {
+        transform: rotate(22.5deg);
+    }
+
+    .kwartieren4 {
+        transform: rotate(37.5deg);
+    }
+
+    .kwartieren5 {
+        transform: rotate(45deg);
+    }
+
+    .kwartieren6 {
+        transform: rotate(52.5deg);
+    }
+
+    .kwartieren7 {
+        transform: rotate(67.5deg);
+    }
+
+    .kwartieren8 {
+        transform: rotate(75deg);
+    }
+
+    .kwartieren9 {
+        transform: rotate(82.5deg);
+    }
+
+    .kwartieren10 {
+        transform: rotate(97.5deg);
+    }
+
+    .kwartieren11 {
+        transform: rotate(105deg);
+    }
+
+    .kwartieren12 {
+        transform: rotate(112.5deg);
+    }
+
+    .kwartieren13 {
+        transform: rotate(127.5deg);
+    }
+
+    .kwartieren14 {
+        transform: rotate(135deg);
+    }
+
+    .kwartieren15 {
+        transform: rotate(142.5deg);
+    }
+
+    .kwartieren16 {
+        transform: rotate(157.5deg);
+    }
+
+    .kwartieren17 {
+        transform: rotate(165deg);
+    }
+
+    .kwartieren18 {
+        transform: rotate(172.5deg);
+    }
+
+/*** Opmaak uren rond de chronodex ******************************/
+        .urenrond {
+            font-weight: bold;
+        }
+        .een {
+            margin-left: 140px;
+            margin-top: -20px;
+        }
+
+        .twee {
+            margin-left: 245px;
+            margin-top: 40px;
+        }
+
+        .drie {
+            margin-left: 260px;
+            margin-top: 48px;
+        }
+
+        .vier {
+            margin-left: 240px;
+            margin-top: 55px;
+        }
+
+        .vijf {
+            margin-left: 140px;
+            margin-top: 35px;
+        }
+
+        .zes {
+            margin-left: 5px;
+        }
+
+        .zeven {
+            margin-left: -125px;
+            margin-top: -30px;
+        }
+
+        .acht {
+            margin-left: -230px;
+            margin-top: -70px;
+        }
+
+        .negen {
+            margin-left: -270px;
+            margin-top: -85px;
+        }
+
+        .tien {
+            margin-left: -245px;
+            margin-top: -85px;
+        }
+
+        .elf {
+            margin-left: -130px;
+            margin-top: -70px;
+        }
+
+        .twaalf {
+
+            margin-top: -30px;
+            margin-left: 5px;
+
+        }
+/************************************** eind uren rond ***/
+
+
+
+/* OPMAAK CHRONODEX ZELF */
+
+    /* OPMAAK MIDDENSTUKJE */
+
+    .knopvanderoos {
+        height: 30px;
+        width: 30px;
+        background-color: white;
+        border: solid black;
+        border-radius: 50%;
+        position: absolute;
+        margin-left: 112px;
+        margin-top: -139px;
+    }
+
+    /* OUTER RING */
+
+        .taartdiagram {
+
+            height: 250px; 
+            width: 250px;
+            background-color: white;
+        }
+
+        .gemeenschappelijk1 {
+              position: absolute;
+              width: inherit;
+              height: inherit;
+              border-radius: 50%;
+        }
+
+
+        .basisschijf { 
+
+              border: solid black;
+        }
+
+
+        .punt {
+              clip: rect(0px, 125px, 125px, 0);
+              margin-left: 3px;
+              margin-top: 3px;
+        }
+
+
+/* MONDAY OUTER CIRCLE */
+    /* BUITENSTE RING: PM */
+        /* SPIES 1 */
+
+            .punt_1_container {
+                transform: rotate(30deg);
+            }
+
+            .punt_1 {
+                  @include sleep;
+                  transform: rotate(-30deg); 
+            }
+
+        /* SPIES 2 */
+
+            .punt_2_container {
+                transform: rotate(195deg);
+            }
+
+            .punt_2 {
+                @include eating;
+                transform: rotate(75deg);
+            }
+
+        /* SPIES 3 */
+
+            .punt_3_container {
+                transform: rotate(90deg);
+            }
+
+            .punt_3 {
+                @include eating;
+                transform: rotate(-75deg);
+            }
+
+        /* SPIES 4 */
+
+            .punt_4_container {
+                transform: rotate(105deg);
+            }
+
+            .punt_4 {
+                @include travel;
+                transform: rotate(-45deg);
+            }
+
+        /* SPIES 5 */
+            .punt_5_container {
+                transform: rotate(158deg);
+            }
+
+            .punt_5 {
+                @include workingforschool;
+                transform: rotate(0deg);
+            }
+
+        /* SPIES 6 */
+            .punt_6_container {
+                transform: rotate(330deg);
+            }
+
+            .punt_6 {
+                @include routines;
+                transform: rotate(-60deg);
+            }
+
+        /* SPIES 7 */
+            .punt_7_container {
+                transform: rotate(360deg);
+            }
+
+            .punt_7 {
+                @include funandculture;
+                transform: rotate(-60deg);
+            }
+
+
+/* DINSDAG */
+    /* BUITENSTE RING: PM */
+        /* SPIES 1 */
+
+            .thuesday_1_container {
+                transform: rotate(30deg);
+            }
+
+            .thuesday_1 {
+                  @include sleep;
+                  transform: rotate(-30deg); 
+            }
+
+        /* SPIES 2 */
+
+              .thuesday_2_container {
+                transform: rotate(195deg);
+            }
+
+            .thuesday_2 {
+                @include eating;
+                transform: rotate(75deg);
+            }
+
+        /* SPIES 3 */
+
+             .thuesday_3_container {
+                transform: rotate(90deg);
+            }
+
+            .thuesday_3 {
+                @include eating;
+                transform: rotate(-75deg);
+            }
+
+        /* SPIES 4 */
+
+            .thuesday_4_container {
+                transform: rotate(60deg);
+            }
+
+            .thuesday_4 {
+                @include school;
+                transform: rotate(45deg);
+            }
+
+        /* SPIES 5 */
+
+            .thuesday_5_container {
+                transform: rotate(90deg);
+            }
+
+            .thuesday_5 {
+                @include travel;
+                transform: rotate(60deg);
+            }
+
+        /* SPIES 6 */
+
+            .thuesday_6_container {
+                transform: rotate(185deg);
+            }
+
+            .thuesday_6 {
+                @include workingforschool;
+                transform: rotate(-10deg);
+            }
+
+
+        /* SPIES 7 */
+
+            .thuesday_7_container {
+                transform: rotate(-90deg);
+            }
+
+            .thuesday_7 {
+                @include routines;
+                transform: rotate(60deg);
+            }
+        
+
+/* WOENSDAG */
+    /* BUITENSTE RING: PM */
+        /* SPIES 1 */
+
+            .wednesday_1_container {
+                transform: rotate(30deg);
+            }
+
+            .wednesday_1 {
+                  @include sleep;
+                  transform: rotate(-30deg); 
+            }
+
+        /* SPIES 2 */
+
+             .wednesday_2_container {
+                transform: rotate(195deg);
+            }
+
+            .wednesday_2 {
+                @include eating;
+                transform: rotate(75deg);
+            }
+
+        /* SPIES 3 */
+
+             .wednesday_3_container {
+                transform: rotate(90deg);
+            }
+
+            .wednesday_3 {
+                @include eating;
+                transform: rotate(-75deg);
+            }
+
+        /* SPIES 4 */
+
+            .wednesday_4_container {
+                transform: rotate(180deg);
+            }
+
+            .wednesday_4 {
+                @include workingout;
+                transform: rotate(-60deg);
+            }
+
+        /* SPIES 5 */
+
+            .wednesday_5_container {
+                transform: rotate(110deg);
+            }
+
+            .wednesday_5 {
+                @include workingforschool;
+                transform: rotate(-25deg);
+            }
+
+        /* SPIES 6 */
+
+            .wednesday_6_container {
+                transform: rotate(175deg);
+            }
+
+            .wednesday_6 {
+                @include workingforschool;
+                transform: rotate(40deg);
+            }
+
+        /* SPIES 7 */
+
+            .wednesday_7_container {
+                transform: rotate(250deg);
+            }
+
+            .wednesday_7 {
+                @include work;
+                transform: rotate(40deg);
+            }
+
+       
+
+
+/* DONDERDAG */
+    /* BUITENSTE RING: PM */
+        /* SPIES 1 */
+
+            .thursday_1_container {
+                transform: rotate(30deg);
+            }
+
+            .thursday_1 {
+                  @include sleep;
+                  transform: rotate(-30deg); 
+            }
+
+        /* SPIES 2 */
+
+              .thursday_2_container {
+                transform: rotate(195deg);
+            }
+
+            .thursday_2 {
+                @include eating;
+                transform: rotate(75deg);
+            }
+
+        /* SPIES 3 */
+
+             .thursday_3_container {
+                transform: rotate(90deg);
+            }
+
+            .thursday_3 {
+                @include eating;
+                transform: rotate(-75deg);
+            }
+
+        /* SPIES 4 */
+
+            .thursday_4_container {
+                transform: rotate(-75deg);
+            }
+
+            .thursday_4 {
+                @include social;
+                transform: rotate(deg);
+            }
+
+        /* SPIES 5 */
+
+            .thursday_5_container {
+                transform: rotate(105deg);
+            }
+
+            .thursday_5 {
+                @include school;
+                transform: rotate(0deg);
+            }
+
+        /* SPIES 6 */
+
+            .thursday_6_container {
+                transform: rotate(180deg);
+            }
+
+            .thursday_6 {
+                @include school;
+                transform: rotate(-30deg);
+            }
+
+/* VRIJDAG */
+    /* BUITENSTE RING: PM */
+        /* SPIES 1 */
+
+            .friday_1_container {
+                transform: rotate(30deg);
+            }
+
+            .friday_1 {
+                  @include sleep;
+                  transform: rotate(-30deg); 
+            }
+
+        /* SPIES 2 */
+
+              .friday_2_container {
+                transform: rotate(195deg);
+            }
+
+            .friday_2 {
+                @include eating;
+                transform: rotate(75deg);
+            }
+
+        /* SPIES 3 */
+
+             .friday_3_container {
+                transform: rotate(90deg);
+            }
+
+            .friday_3 {
+                @include eating;
+                transform: rotate(-75deg);
+            }
+
+        /* SPIES 4 */
+
+            .friday_4_container {
+                transform: rotate(150deg);
+            }
+
+            .friday_4 {
+                @include school;
+                transform: rotate(-81deg);
+            }
+
+        /* SPIES 5 */
+
+            .friday_5_container {
+                transform: rotate(105deg);
+            }
+
+            .friday_5 {
+                @include travel;
+                transform: rotate(-55deg);
+            }
+
+        /* SPIES 6 */
+
+            .friday_6_container {
+                transform: rotate(180deg);
+            }
+
+            .friday_6 {
+                @include funandculture;
+                transform: rotate(0deg);
+            }
+
+        /* SPIES 7 */
+
+            .friday_7_container {
+                transform: rotate(285deg);
+            }
+
+            .friday_7 {
+                @include funandculture;
+                transform: rotate(0deg);
+            }
+
+/* ZATERDAG */
+    /* BUITENSTE RING: PM */
+        /* SPIES 1 */
+
+            .saturday_1_container {
+                transform: rotate(30deg);
+            }
+
+            .saturday_1 {
+                  @include sleep;
+                  transform: rotate(-30deg); 
+            }
+
+        /* SPIES 2 */
+
+              .saturday_2_container {
+                transform: rotate(195deg);
+            }
+
+            .saturday_2 {
+                @include eating;
+                transform: rotate(75deg);
+            }
+
+        /* SPIES 3 */
+
+             .saturday_3_container {
+                transform: rotate(90deg);
+            }
+
+            .saturday_3 {
+                @include eating;
+                transform: rotate(-75deg);
+            }
+
+        /* SPIES 4 */
+
+            .saturday_4_container {
+                transform: rotate(180deg);
+            }
+
+            .saturday_4 {
+                @include workingout;
+                transform: rotate(-60deg);
+            }
+
+/* ZONDAG */
+    /* BUITENSTE RING: PM */
+        /* SPIES 1 */
+
+            .sunday_1_container {
+                transform: rotate(30deg);
+            }
+
+            .sunday_1 {
+                  @include sleep;
+                  transform: rotate(-30deg); 
+            }
+
+        /* SPIES 2 */
+
+            .sunday_2_container {
+                transform: rotate(195deg);
+            }
+
+            .sunday_2 {
+                @include eating;
+                transform: rotate(75deg);
+            }
+
+        /* SPIES 3 */
+
+             .sunday_3_container {
+                transform: rotate(90deg);
+            }
+
+            .sunday_3 {
+                @include eating;
+                transform: rotate(-75deg);
+            }
+
+        /* SPIES 4 */
+
+            .sunday_4_container {
+                transform: rotate(180deg);
+            }
+
+            .sunday_4 {
+                @include workingout;
+                transform: rotate(-60deg);
+            }
+
+/**********************************************/
+
+
+/*** AM CIRKEL/BINNENCIRKEL  OPMAKEN ******************************/
+
+        .AM {
+          border-radius: 50%;
+          background-color: white;
+          position: absolute;
+
+          height: 150px;
+          width: 150px;
+          margin-left: 50px;
+          margin-top: 50px;
+
+        }
+
+        .gemeenschappelijk2 {
+              position: absolute;
+              width: inherit;
+              height: inherit;
+              border-radius: 50%;
+        }
+
+        .achtergrond {
+            background-color: white;
+            height: 150px;
+            width: 150px;
+            margin-left: 55px;
+            margin-top: 55px
+        }
+
+        .basisschijfAM { 
+
+              border: solid black;
+
+        }
+
+
+        .puntAM {
+              clip: rect(0px, 75px, 75px, 0);
+              margin-left: 3px;
+              margin-top: 3px;
+        }
+
+/*** MONDAY INNER CIRCLE *************************************/
+    /* SPIES 1 */
+            .ammonday_1_container {
+                transform: rotate(90deg);
+            }
+
+            .ammonday_1 {
+                @include sleep;
+                transform: rotate(0deg);
+            }
+
+    /* SPIES 2 */
+            .ammonday_2_container {
+                transform: rotate(180deg);
+            }
+
+            .ammonday_2 {
+                @include sleep;
+                transform: rotate(-15deg);
+            }
+
+      /* SPIES 3 */
+                .ammonday_3_container {
+                    transform: rotate(263deg);
+                }
+
+                .ammonday_3 {
+                    @include routines;
+                    transform: rotate(-60deg);
+                }
+
+      /* SPIES 4 */
+                .ammonday_4_container {
+                    transform: rotate(345deg);
+                }
+
+                .ammonday_4 {
+                    @include school;
+                    transform: rotate(-45deg);
+                }
+
+    /* SPIES 5*/
+             .ammonday_5_container {
+                    transform: rotate(405deg);
+                }
+
+                .ammonday_5 {
+                    @include school;
+                    transform: rotate(-45deg);
+                }
+
+    /* SPIES 6 */
+            .ammonday_6_container {
+                    transform: rotate(-113deg);
+                }
+
+                .ammonday_6 {
+                    @include travel;
+                    transform: rotate(53deg);
+                }
+
+
+
+/*** THUESDAY INNER CIRCLE *************************************/
+    /* SPIES 1 */
+            .amthuesday_1_container {
+                transform: rotate(90deg);
+            }
+
+            .amthuesday_1 {
+                @include sleep;
+                transform: rotate(0deg);
+            }
+
+    /* SPIES 2 */
+            .amthuesday_2_container {
+                transform: rotate(180deg);
+            }
+
+            .amthuesday_2 {
+                @include sleep;
+                transform: rotate(-15deg);
+            }
+
+      /* SPIES 3 */
+                .amthuesday_3_container {
+                    transform: rotate(263deg);
+                }
+
+                .amthuesday_3 {
+                    @include routines;
+                    transform: rotate(-60deg);
+                }
+
+      /* SPIES 4 */
+                .amthuesday_4_container {
+                    transform: rotate(345deg);
+                }
+
+                .amthuesday_4 {
+                    @include school;
+                    transform: rotate(-45deg);
+                }
+
+    /* SPIES 5*/
+             .amthuesday_5_container {
+                    transform: rotate(405deg);
+                }
+
+                .amthuesday_5 {
+                    @include school;
+                    transform: rotate(-45deg);
+                }
+
+    /* SPIES 6 */
+            .amthuesday_6_container {
+                    transform: rotate(-113deg);
+                }
+
+                .amthuesday_6 {
+                    @include travel;
+                    transform: rotate(53deg);
+                }
+
+/*** WEDNESDAY INNER CIRCLE *************************************/
+    /* SPIES 1 */
+            .amwednesday_1_container {
+                transform: rotate(90deg);
+            }
+
+            .amwednesday_1 {
+                @include sleep;
+                transform: rotate(0deg);
+            }
+
+    /* SPIES 2 */
+            .amwednesday_2_container {
+                transform: rotate(180deg);
+            }
+
+            .amwednesday_2 {
+                @include sleep;
+                transform: rotate(0deg);
+            }
+
+      /* SPIES 3 */
+                .amwednesday_3_container {
+                    transform: rotate(-90deg);
+                }
+
+                .amwednesday_3 {
+                    @include routines;
+                    transform: rotate(-60deg);
+                }
+
+      /* SPIES 4 */
+                .amwednesday_4_container {
+                    transform: rotate(345deg);
+                }
+
+                .amwednesday_4 {
+                    @include workingforschool;
+                    transform: rotate(-45deg);
+                }
+
+    /* SPIES 5*/
+             .amwednesday_5_container {
+                    transform: rotate(405deg);
+                }
+
+                .amwednesday_5 {
+                    @include workingforschool;
+                    transform: rotate(-45deg);
+                }
+
+    /* SPIES 6 */
+            .amwednesday_6_container {
+                    transform: rotate(-110deg);
+                }
+
+                .amwednesday_6 {
+                    @include funandculture;
+                    transform: rotate(53deg);
+                }
+
+/*** THURSDAY INNER CIRCLE *************************************/
+    /* SPIES 1 */
+            .amthursday_1_container {
+                transform: rotate(90deg);
+            }
+
+            .amthursday_1 {
+                @include sleep;
+                transform: rotate(0deg);
+            }
+
+    /* SPIES 2 */
+            .amthursday_2_container {
+                transform: rotate(180deg);
+            }
+
+            .amthursday_2 {
+                @include sleep;
+                transform: rotate(-15deg);
+            }
+
+      /* SPIES 3 */
+                .amthursday_3_container {
+                    transform: rotate(263deg);
+                }
+
+                .amthursday_3 {
+                    @include routines;
+                    transform: rotate(-60deg);
+                }
+
+      /* SPIES 4 */
+                .amthursday_4_container {
+                    transform: rotate(345deg);
+                }
+
+                .amthursday_4 {
+                    @include school;
+                    transform: rotate(0deg);
+                }
+
+    /* SPIES 5*/
+             .amthursday_5_container {
+                    transform: rotate(405deg);
+                }
+
+                .amthursday_5 {
+                    @include school;
+                    transform: rotate(-45deg);
+                }
+
+    /* SPIES 6 */
+            .amthursday_6_container {
+                    transform: rotate(-113deg);
+                }
+
+                .amthursday_6 {
+                    @include travel;
+                    transform: rotate(53deg);
+                }
+
+/*** FRIDAY INNER CIRCLE *************************************/
+    /* SPIES 1 */
+            .amfriday_1_container {
+                transform: rotate(90deg);
+            }
+
+            .amfriday_1 {
+                @include sleep;
+                transform: rotate(0deg);
+            }
+
+    /* SPIES 2 */
+            .amfriday_2_container {
+                transform: rotate(180deg);
+            }
+
+            .amfriday_2 {
+                @include sleep;
+                transform: rotate(-15deg);
+            }
+
+      /* SPIES 3 */
+                .amfriday_3_container {
+                    transform: rotate(263deg);
+                }
+
+                .amfriday_3 {
+                    @include routines;
+                    transform: rotate(-60deg);
+                }
+
+      /* SPIES 4 */
+                .amfriday_4_container {
+                    transform: rotate(345deg);
+                }
+
+                .amfriday_4 {
+                    @include workingforschool;
+                    transform: rotate(-45deg);
+                }
+
+    /* SPIES 5*/
+             .amfriday_5_container {
+                    transform: rotate(405deg);
+                }
+
+                .amfriday_5 {
+                    @include workingforschool;
+                    transform: rotate(-45deg);
+                }
+
+    /* SPIES 6 */
+            .amfriday_6_container {
+                    transform: rotate(-113deg);
+                }
+
+                .amfriday_6 {
+                    @include workingforschool;
+                    transform: rotate(53deg);
+                }
+
+/*** SATURDAY INNER CIRCLE *************************************/
+    /* SPIES 1 */
+            .amsaturday_1_container {
+                transform: rotate(90deg);
+            }
+
+            .amsaturday_1 {
+                @include sleep;
+                transform: rotate(0deg);
+            }
+
+    /* SPIES 2 */
+            .amsaturday_2_container {
+                transform: rotate(180deg);
+            }
+
+            .amsaturday_2 {
+                @include sleep;
+                transform: rotate(0deg);
+            }
+
+      /* SPIES 3 */
+            .amsaturday_3_container {
+                transform: rotate(270deg);
+            }
+
+            .amsaturday_3 {
+                @include sleep;
+                transform: rotate(-30deg);
+            }
+
+      /* SPIES 4 */
+            .amsaturday_4_container {
+                transform: rotate(360deg);
+            }
+
+            .amsaturday_4 {
+                @include social;
+                transform: rotate(0deg);
+            }
+  
+
+/*** SUNDAY INNER CIRCLE *************************************/
+            .amsunday_1_container {
+                transform: rotate(90deg);
+            }
+
+            .amsunday_1 {
+                @include sleep;
+                transform: rotate(0deg);
+            }
+
+    /* SPIES 2 */
+            .amsunday_2_container {
+                transform: rotate(180deg);
+            }
+
+            .amsunday_2 {
+                @include sleep;
+                transform: rotate(0deg);
+            }
+
+      /* SPIES 3 */
+            .amsunday_3_container {
+                transform: rotate(270deg);
+            }
+
+            .amsunday_3 {
+                @include sleep;
+                transform: rotate(-30deg);
+            }
+
+      /* SPIES 4 */
+            .amsunday_4_container {
+                transform: rotate(337deg);
+            }
+
+            .amsunday_4 {
+                @include routines;
+                transform: rotate(-60deg);
+            }
+
+    /* SPIES 5 */
+            .amsunday_5_container {
+                transform: rotate(375deg);
+            }
+
+            .amsunday_5 {
+                @include funandculture;
+                transform: rotate(-75deg);
+            }
+
+    
+
+/*** Footer ***********************************************/
+
+        footer {
+            background-color: black;
+            color: white;
+            font-weight: bold;
+            padding: 15px;
+            margin-top: 20px;
+        }
+
+/******************************************* End footer ***/
